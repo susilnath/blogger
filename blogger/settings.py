@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'blogger.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-
+#both sqlite and postgresql are configured. The database is changed to postgresql below
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
