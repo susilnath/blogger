@@ -1,0 +1,37 @@
+{% extends 'source1/base.html' %}
+
+{% block content %}
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h3 class=" site-heading my-4 mt-3 text-white"> Make Blogs <3 </h3>
+          <p class="text-light">We Love Blogging Too..! &nbsp
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+<div class="col-md-8 mt-3 left">
+      <div class="card mb-4">
+        <div class="card-body">
+    <h1 class="card-title">{% if title %}Edit Post{% endif %}{% if mode %}Create Post{% endif %}</h1>
+    <div class="card-text">
+    <form action="submit" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="text" name="title" {% if title %}value="{{title}}"{% endif %} />
+        </br>
+        <input id="textboxid" class="card-body mt-4" name="blog" size="50" type="text" {% if title %}value="{{blog_txt}}"{% endif %} />
+        </br>
+        <input class="mt-4" type="submit" {% if title %}value="Update"{% endif %}{% if mode %}value="Create"{% endif %} />
+    </form>
+    </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
