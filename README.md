@@ -3,7 +3,7 @@
 [Live Website](https://boiling-anchorage-31077.herokuapp.com/blog/)
 
 ## What is this?:
-1.This is a simple blogger website where u can create,read,edit and delete blogs. 
+1.This is a simple blogger website where you can create,read,edit and delete blogs. 
 2.Currently running on both *sqlite3* and *PostgreSQL* for debugging purposes
 
 ## Interesting Things:
