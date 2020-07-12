@@ -25,9 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9^&yr02!8l^bsg_wqq%l#a39mc$rbmbmp91v%kjs6y29xk#)3a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['boiling-anchorage-31077.herokuapp.com']
+ALLOWED_HOSTS = ['boiling-anchorage-31077.herokuapp.com','127.0.0.1']
 
 
 # Application definition
