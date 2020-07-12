@@ -27,7 +27,7 @@ SECRET_KEY = '9^&yr02!8l^bsg_wqq%l#a39mc$rbmbmp91v%kjs6y29xk#)3a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['boiling-anchorage-31077.herokuapp.com']
 
 
 # Application definition
